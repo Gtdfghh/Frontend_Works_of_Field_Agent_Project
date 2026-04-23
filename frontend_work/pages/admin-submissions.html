@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin - Submissions</title>
+  <link rel="stylesheet" href="../css/admin-submissions.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <h1>Submission Review</h1>
+  <div>
+    <button onclick="goBack()">Back</button>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stat-card">
+    <h3 id="totalSubmissions">0</h3>
+    <p>Total</p>
+  </div>
+
+  <div class="stat-card">
+    <h3 id="approvedCount">0</h3>
+    <p>Approved</p>
+  </div>
+
+  <div class="stat-card">
+    <h3 id="rejectedCount">0</h3>
+    <p>Rejected</p>
+  </div>
+
+  <div class="stat-card">
+    <h3 id="pendingCount">0</h3>
+    <p>Pending</p>
+  </div>
+</div>
+
+<!-- FILTER -->
+<div class="filters">
+  <input 
+    type="text" 
+    id="searchEmail" 
+    placeholder="Search by email"
+  >
+  <select id="statusFilter">
+    <option value="">All</option>
+    <option value="SUBMITTED">Submitted</option>
+    <option value="APPROVED">Approved</option>
+    <option value="REJECTED">Rejected</option>
+  </select>
+
+  <button onclick="applyFilter()">Apply</button>
+</div>
+
+<!-- LIST -->
+<div id="submissionsContainer"></div>
+<div id="pagination"></div>
+
+<script src="../js/admin-submissions.js"></script>
+<div id="toast" class="toast">
+  <div id="toastMessage"></div>
+  <div class="progress-bar"></div>
+</div>
+
+</body>
+</html>

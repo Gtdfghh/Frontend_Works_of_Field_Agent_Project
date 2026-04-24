@@ -1,0 +1,291 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+   background: #ffffff;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background: linear-gradient(90deg, #4e73df, #22c55e);
+  color: white;
+}
+
+.header-actions button {
+  margin-left: 10px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.logout-btn {
+  background: red;
+  color: white;
+}
+
+/* 🔥 STATS (NOW SAME AS SUBMISSION) */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.stat-card {
+  background: #e5e7eb;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.stat-card h3 {
+  margin: 0;
+  font-size: 28px;
+  color: #4e73df;
+}
+
+/* 🔥 FILTERS (MATCH SUBMISSION STYLE) */
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+  background: #e5e7eb;
+  margin: 0 20px;
+  border-radius: 12px;
+}
+
+.filters input,
+.filters select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 220px;
+}
+
+.filters button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #4e73df;
+  color: white;
+  cursor: pointer;
+}
+
+/* CARDS */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.agent-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  transition: 0.3s;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;   
+}
+
+.agent-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* STATUS */
+.status {
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status.active,
+.status.approved {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.status.pending {
+  background: #fef9c3;
+  color: #ca8a04;
+}
+
+.status.rejected {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+/* BUTTONS */
+.actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.approve {
+  background: #22c55e;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.reject {
+  background: red;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.review-input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;   
+}
+#pagination {
+  display: flex;
+  justify-content: center;   
+  align-items: center;
+  gap: 10px;
+  margin: 20px;
+}
+#pagination button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #ddd;
+  cursor: pointer;
+}
+
+#pagination button.active {
+  background: #4e73df;
+  color: white;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 220px;
+  min-height: 100vh;   
+  background: #1e293b;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+
+.sidebar a {
+  display: block;
+  padding: 10px;
+  margin-bottom: 5px;
+  color: #cbd5e1;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.sidebar a:hover {
+  background: #334155;
+}
+
+.sidebar .active {
+  background: #3b82f6;
+  color: white;
+}
+
+/* MAIN CONTENT */
+.main-content {
+  flex: 1;
+  padding: 10px;
+   background: linear-gradient(135deg, #1e293b, #0f172a);   /* ✅ MATCHES YOUR CARD AREA */
+}
+/* TOAST */
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #e6f4ea; /* ✅ LIGHT GREEN */
+  color: #2e7d32; /* dark green text */
+  padding: 14px 18px;
+  border-radius: 10px;
+  font-size: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.4s ease;
+  z-index: 1000;
+  min-width: 260px;
+  border-left: 5px solid #2e7d32; /* left highlight */
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ICON + TEXT */
+.toast-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.toast-content i {
+  color: #2e7d32;
+  font-size: 18px;
+}
+
+/* PROGRESS BAR */
+.progress-bar {
+  height: 3px;
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 2px;
+  animation: progressAnim 3s linear forwards;
+}
+/* SUCCESS → GREEN */
+.toast.success .progress-bar {
+  background: #2e7d32;
+}
+
+/* ERROR → RED */
+.toast.error .progress-bar {
+  background: #c62828;
+}
+
+@keyframes progressAnim {
+  from { width: 100%; }
+  to { width: 0%; }
+}
+/* ✅ SUCCESS (LIGHT GREEN) */
+.toast.success {
+  background-color: #e6f4ea;
+  color: #2e7d32;
+  border-left: 5px solid #2e7d32;
+}
+
+/* ❌ ERROR (LIGHT RED) */
+.toast.error {
+  background-color: #fdecea;
+  color: #c62828;
+  border-left: 5px solid #c62828;
+}

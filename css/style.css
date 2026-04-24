@@ -1,0 +1,332 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+
+  /* 🔥 DARK GRADIENT BACKGROUND */
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: white;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+
+  /* 🔥 GLASS EFFECT */
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  color: white;
+}
+
+.logo {
+  font-size: 22px;
+}
+
+/* NAV BUTTONS */
+.nav-buttons button {
+  margin-left: 10px;
+  padding: 8px 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  transition: 0.3s;
+}
+
+.nav-buttons button:hover {
+  background: #3b82f6;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+  color: white;
+
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url("../images/images.jpg") no-repeat center/cover;
+
+  position: relative;
+}
+
+.hero * {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 42px;
+  color: #ffffff;;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 20px auto;
+   color: #e2e8f0;;
+}
+
+/* HERO BUTTONS */
+.hero-buttons button {
+  margin: 10px;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.primary {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: white;
+}
+
+.secondary {
+  background: #3b82f6;   /* Blue */
+  color: white;
+  transition: 0.3s;
+}
+
+.secondary:hover {
+  background: #2563eb;   /* Darker blue */
+}
+
+
+/* FEATURES */
+.features-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+.cta-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.rocket-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.features-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.feature-box {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+
+  padding: 20px;
+  width: 200px;
+  border-radius: 12px;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  transition: 0.3s;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+  border-color: #3b82f6;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-size: 22px;
+  color: white;
+}
+
+/* NAV LINKS */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+/* Hover Effect */
+.nav-links li a:hover {
+  color: #3b82f6;
+}
+
+/* Register Button Highlight */
+.register-btn {
+  background: #3b82f6;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+/* HOW IT WORKS */
+.steps-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+/* STEPS */
+.step {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+
+  padding: 15px 20px;
+  border-radius: 12px;
+  width: 160px;
+  text-align: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  transition: 0.3s;
+}
+
+.step span {
+  display: inline-block;
+  background: #3b82f6;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  line-height: 30px;
+  margin-bottom: 8px;
+}
+
+.step.active {
+  border: 2px solid #3b82f6;
+  background: rgba(59, 130, 246, 0.1);
+}
+
+.step:hover {
+  transform: translateY(-5px);
+}
+
+/* ARROW */
+.arrow {
+  font-size: 20px;
+  color: #94a3b8;
+}
+
+/* TRUST */
+.trust-section {
+  text-align: center;
+  padding: 50px;
+}
+
+.trust-container p {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #cbd5f5;
+}
+
+/* CTA */
+.cta-section {
+  text-align: center;
+  padding: 60px;
+  background: linear-gradient(135deg, #020617, #0f172a);
+  color: white;
+}
+
+.cta-section button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cta-section button:first-child {
+  background: #22c55e;
+  color: white;
+}
+
+.cta-section button:last-child {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+  color: #94a3b8;
+}
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.services-container, .about-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.service-box, .about-cards div {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 10px;
+  width: 220px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 250px;
+}
+
+.contact-form button {
+  background: #3b82f6;
+  color: white;
+  padding: 10px;
+  border: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fix navbar overlap */
+section {
+  scroll-margin-top: 80px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;  /* KEY LINE */
+  align-items: center;
+  padding: 15px 40px;
+}

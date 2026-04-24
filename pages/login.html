@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <title>Login - AgentFlow</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  
+  <div class="container">
+
+    <!-- LEFT SIDE (IMAGE + BRANDING) -->
+    <div class="left-panel">
+      <div class="overlay">
+        <h1>AgentFlow</h1>
+        <p>Secure Field Agent Onboarding System</p>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE (LOGIN FORM) -->
+    <div class="right-panel">
+
+      <div class="form-container">
+
+        <form id="loginForm" class="form-box">
+
+          <h1 class="title">Login</h1>
+          <p class="subtitle">Enter your credentials</p>
+
+          <input type="email" id="email" placeholder="Email" required>
+          <div class="password-wrapper">
+  <input type="password" id="password" placeholder="Password" required>
+  <i class="fa-solid fa-eye eye-icon" id="togglePassword"></i>
+</div>
+<div class="forgot">
+  <a href="forgot-password.html">Forgot Password?</a>
+</div>
+          
+
+          <button type="submit">Login</button>
+
+          <!-- 🔥 REGISTER LINK ADDED -->
+          <p class="register-text">
+            New user?
+            <a href="agent-register.html" class="register-link">Register</a>
+          </p>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- JS -->
+  <script src="../js/login.js"></script>
+  <div id="toast" class="toast">
+  <div id="toastMessage"></div>
+  <div class="progress-bar"></div>
+</div>
+<div id="loader" class="loader">
+  <div class="spinner"></div>
+</div>
+</body>
+</html>

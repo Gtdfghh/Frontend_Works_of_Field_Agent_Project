@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Agent Registration</title>
+  <link rel="stylesheet" href="../css/agent-register.css">
+  <style>
+    .error {
+      color: red;
+      font-size: 12px;
+      margin-top: 5px;
+      display: block;
+    }
+
+    .input-error {
+      border: 1px solid red !important;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <form id="registerForm" class="card">
+
+    <h1>Agent Registration</h1>
+    <p class="subtitle">Join as a professional field agent</p>
+
+    <!-- EMAIL -->
+    <div class="input-group">
+      <input type="email" id="email" required>
+      <label>Email</label>
+      <small class="error" id="emailError"></small>
+    </div>
+
+    <!-- NAME -->
+    <div class="input-group">
+      <input type="text" id="name" required>
+      <label>Full Name</label>
+      <small class="error" id="nameError"></small>
+    </div>
+
+    <!-- ZIP -->
+    <div class="input-group">
+      <input type="text" id="zip" required>
+      <label>Zip Code</label>
+      <small class="error" id="zipError"></small>
+    </div>
+
+    <!-- RADIUS -->
+    <div class="input-group">
+      <input type="number" id="radius" required>
+      <label>Coverage Radius (km)</label>
+      <small class="error" id="radiusError"></small>
+    </div>
+
+    <!-- SELECTS -->
+    <div class="select-group">
+      <label>Has Camera</label>
+      <select id="camera">
+        <option value="">Select</option>
+        <option value="true">Yes</option>
+        <option value="false">No</option>
+      </select>
+      <small class="error" id="cameraError"></small>
+    </div>
+
+    <div class="select-group">
+      <label>Has Vehicle</label>
+      <select id="vehicle">
+        <option value="">Select</option>
+        <option value="true">Yes</option>
+        <option value="false">No</option>
+      </select>
+      <small class="error" id="vehicleError"></small>
+    </div>
+
+    <div class="select-group">
+      <label>Has GPS</label>
+      <select id="gps">
+        <option value="">Select</option>
+        <option value="true">Yes</option>
+        <option value="false">No</option>
+      </select>
+      <small class="error" id="gpsError"></small>
+    </div>
+
+    <div class="select-group">
+      <label>Has Internet</label>
+      <select id="internet">
+        <option value="">Select</option>
+        <option value="true">Yes</option>
+        <option value="false">No</option>
+      </select>
+      <small class="error" id="internetError"></small>
+    </div>
+
+    <textarea id="experience" placeholder="Experience (optional)"></textarea>
+
+    <button type="submit">Register</button>
+
+  </form>
+
+</div>
+
+<script src="../js/agent-register.js"></script>
+<div id="toast" class="toast">
+  <div id="toastMessage"></div>
+  <div class="progress-bar"></div>
+</div>
+<div id="loader" class="loader">
+  <div class="spinner"></div>
+</div>
+</body>
+</html>

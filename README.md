@@ -91,14 +91,14 @@ Make sure the backend server is running before using features such as:
 ### Login Page
 
 ![Login Page](images/login-page.png)
+### Register Page
+
+![Register Page](images/register-page.png)
 
 ### Agent Dashboard
 
 ![Agent Dashboard](images/agent-dashboard.png)
 
-### Document Upload Page
-
-![Document Upload Page](images/document-upload.png)
 
 ### Admin Dashboard
 

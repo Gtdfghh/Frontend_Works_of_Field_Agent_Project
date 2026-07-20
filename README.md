@@ -28,24 +28,29 @@ The frontend provides a user-friendly interface for field agents to register, lo
 6. Documents can be approved or rejected based on verification.
 7. The field agent can view the updated verification status through the application.
 
+
 ## Technologies Used
 
-* React.js
-* JavaScript
-* HTML5
-* CSS3
-* REST API
-* Axios / Fetch API
-* Git and GitHub
+- HTML5
+- CSS3
+- JavaScript
+- REST API
+- Fetch API
+- Git and GitHub
 
+## Project Structure
+
+```text
 Frontend_Works_of_Field_Agent_Project/
 │
-├── css/
-├── images/
-├── js/
-├── pages/
-├── README.md
-└── index.html
+├── css/               # Contains CSS stylesheets
+├── frontend_work/     # Contains frontend-related project files
+├── images/            # Contains images and visual assets
+├── js/                # Contains JavaScript files
+├── pages/             # Contains different HTML pages
+├── README.md          # Project documentation
+└── index.html         # Main entry page of the application
+```
 
 ## Installation and Setup
 
@@ -55,65 +60,51 @@ Frontend_Works_of_Field_Agent_Project/
 git clone <your-frontend-repository-url>
 ```
 
-### 2. Navigate to the Project Folder
+### 2. Open the Project
+
+Navigate to the cloned project folder.
 
 ```bash
-cd <frontend-folder-name>
+cd Frontend_Works_of_Field_Agent_Project
 ```
 
-### 3. Install Dependencies
+### 3. Run the Application
 
-```bash
-npm install
-```
+Since the frontend is built using HTML, CSS, and JavaScript, no package installation is required.
 
-### 4. Start the Development Server
+Open `index.html` directly in a web browser or use the **Live Server** extension in Visual Studio Code.
 
-If the project uses Vite:
+### 4. Backend Connection
 
-```bash
-npm run dev
-```
+Make sure the backend server is running before using features such as:
 
-Open the localhost URL displayed in the terminal, usually:
-
-```text
-http://localhost:5173
-```
-
-## Backend Integration
-
-This frontend application communicates with the backend using REST APIs.
-
-The backend is maintained in a **separate GitHub repository**.
-
-Make sure the backend server is running before using features that require authentication, agent data, document uploads, or verification.
+- Agent registration and login
+- Document submission
+- Document verification
+- Agent status tracking
+- Admin operations
 
 ## Application Screenshots
 
 ### Home Page
 
-![Home Page](screenshots/home-page.png)
+![Home Page](images/home-page.png)
 
 ### Login Page
 
-![Login Page](screenshots/login-page.png)
+![Login Page](images/login-page.png)
 
 ### Agent Dashboard
 
-![Agent Dashboard](screenshots/agent-dashboard.png)
+![Agent Dashboard](images/agent-dashboard.png)
 
 ### Document Upload Page
 
-![Document Upload](screenshots/document-upload.png)
-
-### Document Verification Page
-
-![Document Verification](screenshots/document-verification.png)
+![Document Upload Page](images/document-upload.png)
 
 ### Admin Dashboard
 
-![Admin Dashboard](screenshots/admin-dashboard.png)
+![Admin Dashboard](images/admin-dashboard.png)
 
 ## Purpose of the Project
 

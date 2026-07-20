@@ -35,21 +35,19 @@ The frontend provides a user-friendly interface for field agents to register, lo
 - CSS3
 - JavaScript
 - REST API
-- Fetch API
 - Git and GitHub
+
 
 ## Project Structure
 
 ```text
 Frontend_Works_of_Field_Agent_Project/
 │
-├── css/               # Contains CSS stylesheets
-├── frontend_work/     # Contains frontend-related project files
-├── images/            # Contains images and visual assets
-├── js/                # Contains JavaScript files
-├── pages/             # Contains different HTML pages
-├── README.md          # Project documentation
-└── index.html         # Main entry page of the application
+├── css/          # Contains CSS stylesheets
+├── images/       # Contains images and visual assets
+├── js/           # Contains JavaScript files
+├── pages/        # Contains different HTML pages
+└── index.html    # Main entry page of the application
 ```
 
 ## Installation and Setup

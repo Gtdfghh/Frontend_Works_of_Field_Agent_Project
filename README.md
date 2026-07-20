@@ -40,20 +40,14 @@ The frontend provides a user-friendly interface for field agents to register, lo
 
 ## Project Structure
 
-```text
-frontend/
-├── public/
-├── src/
-│   ├── assets/
-│   ├── components/
-│   ├── pages/
-│   ├── services/
-│   ├── App.jsx
-│   └── main.jsx
-├── package.json
-├── vite.config.js
-└── README.md
-```
+Frontend_Works_of_Field_Agent_Project/
+│
+├── css/              # Contains CSS files for styling the application
+├── images/           # Contains images and other visual assets
+├── js/               # Contains JavaScript files for frontend functionality
+├── pages/            # Contains different HTML pages of the application
+├── index.html        # Main entry page of the application
+└── README.md         # Project documentation
 
 > The exact folder structure may vary depending on the implementation.
 
